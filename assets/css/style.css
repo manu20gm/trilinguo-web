@@ -1,0 +1,423 @@
+body{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/*img {max-width:100%;}*/
+
+button{
+    border: none;
+}
+
+#container{
+    height: auto;
+    width: auto;
+    background: url('../img/bg.png');
+}
+
+#header{
+    width: 90%;
+    margin: 0 auto;
+    height: 90vh;
+    color: white;
+    font-size: 1.6em;
+    font-weight: bold;
+    text-align: center;
+}
+
+#nav{
+    position: sticky;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 15vh;
+    background-color: #235390;
+}
+
+#logo{
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.6em;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+#select-lang{
+    text-transform: uppercase;
+    display:flex;
+    flex-grow: 3;
+    font-size: .6em;
+    justify-content: flex-end;
+}
+
+#front{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 75vh;
+}
+
+#globo{
+    display: flex;
+    flex-grow: 1;
+}
+
+#block-front{
+    min-width: 394px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 3;
+    width: 100%;
+}
+
+#block-front > h2 {
+
+    font-size: 1.2em;
+}
+
+.btn{
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+    font-size: .7em;
+    font-weight: bold;
+    height: 15%;
+    min-width: 272px;
+    padding: 10px 30px 10px 30px;
+    text-transform: uppercase;
+    width: 50%;
+}
+
+.btn-green {
+    background-color: #58cc02;
+    box-shadow: 0px 5px #3f8b04;
+    margin-bottom: 20px;
+    
+}
+
+.btn-blue {
+    border: 2px solid rgb(9, 36, 70);
+    background-color: rgb(35,83,144);
+    box-shadow: 0px 5px  rgb(9, 36, 70);
+}
+
+#lang-bar{
+    height: 10vh;
+    width: 100%;
+    background-color: #0a4a82;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+#lang-section{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.lang-item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+}
+
+.lang-item > img {
+    max-width: 35px;
+    margin-right: 5px;
+}
+
+
+.info{
+    width: 75%;
+    margin: 0 auto;
+    border-bottom: 2px solid #d6d6d6;
+}
+
+.info p {
+    font-weight: 300;
+    color: #777;
+    line-height: 1.7em;
+}
+
+.info h2 {
+    text-align: center;
+}
+
+.block-1{
+    display: flex;
+    flex-direction: row;
+    padding: 40px 0 40px 0;
+}
+
+.text-1{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 1em;
+}
+
+.text-1 > h2{
+    text-align: left;
+}
+
+.separator{
+    width: 100px;
+}
+
+.bhuo, .pajaro {
+    width: 180px;
+}
+.bhuo-3{
+    height: 170px;
+    width: auto;
+}
+
+.block-2{
+    display: flex;
+    flex-direction: row;
+}
+
+.text-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 1em;
+}
+
+.text-2 > p{
+    font-size: .8em;
+}
+
+.text-2 > h3{
+    margin: 0;
+}
+
+.portatil{
+    width: 250px;
+}
+
+.link{
+    color: #1cb0f6;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.link:hover{
+    color: #2bd5ff;
+}
+
+.btn-app{
+    background-color: white;
+    border-radius: 15px;
+    border: 2px solid #e5e5e5;
+    color: #444444;
+    font-weight: 700;
+    font-size:.9em;
+    text-align: left;
+    width: 190px;
+    cursor: pointer;
+    padding: 10px 30px 10px 30px;
+    box-shadow: 0px 5px #e5e5e5;
+}
+
+.btn-app:hover{
+    background-color: #e6e6e6;
+    box-shadow: 0px 5px #cfcfcf;
+    border: 2px solid #cfcfcf;
+}
+
+
+#block-footer{
+    height: auto;
+    width: 100%;
+    background: url('../img/bg.png');
+}
+
+#call-to-action{
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 auto;
+    height: 250px;
+}
+
+#call-to-action > h3 {
+    margin: 0;
+    font-size: 1.8em;
+    color: white;
+}
+
+.btn-green-call {
+    background-color: #58cc02;
+    box-shadow: 0px 5px #3f8b04;
+    margin-bottom: 20px;
+    max-width: 180px;
+}
+
+#footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: auto;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.footer-section{
+    display: flex;
+    flex-direction: column;
+    /*La abreviatura de flex: 1 | es la misma que flex: 1 1 0, que es equivalente aflex-grow: 1;  flex-shrink: 1;  flex-basis: 0;*/
+    flex: 1;
+    justify-content: flex-start;
+}
+
+.footer-section > p{
+    color: #fff;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.ul-footer{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    background-color: #235390;
+}
+
+.li-footer{
+    margin-bottom: 10px;
+    padding-right: 50px;
+}
+
+.li-footer > a {
+    color: #fff;
+    opacity: .5;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.li-footer > a:hover {
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 964px) {
+    /* boton baja linea e idiomas se aprientan demasiado */
+    .btn{
+        padding: 10px 0;
+    }
+    #lang-bar {
+       display: none;
+    }
+}
+
+@media only screen and (max-width: 710px) {
+    /* aparece un espacio blanco a la derecha y botones se siguen apretando */
+    
+    #globo{
+        justify-content: center;
+    }
+
+    #globo > img{
+        width:50%;
+    }
+
+    #block-front{
+        padding-bottom: 50px;
+    }
+
+    .spearator{
+        display: none;
+    }
+    
+    #select-lang{
+        display: none;
+    }
+
+    #header{
+        height: auto;
+    }
+
+    #front{
+        flex-direction: column;
+        height: auto;
+    }
+
+   
+
+    .btn-azul{
+        padding-bottom: 10px;
+    }
+
+    .block-1{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info{
+        width: 95%;
+    }
+    .block-2{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text-1 > h2{
+        text-align: center;
+    }
+
+    .btn-app-block{
+        flex-direction: row;
+        justify-content: center;
+        display: flex;
+        padding-bottom: 30px;
+    }
+
+    #call-to-action{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    #footer{
+        flex-wrap: wrap;
+    }
+
+    .btn-app{
+        width:auto;
+    }
+}
+
+@media only screen and (max-width: 415px) {
+    /*Recuadro blanco*/
+
+    #block-front{
+        min-width:0px;
+        padding: 20px 0 50px 0;
+    }
+
+    #front{
+        height: auto;
+    }
+
+    #logo{
+        justify-content: flex-start;
+        margin-top: 20px;
+    }
+    .btn{
+        min-width: 0px;
+        width: 100%;
+    }
+}
