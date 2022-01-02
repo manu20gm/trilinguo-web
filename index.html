@@ -10,16 +10,46 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family==Ubuntu:wght@200;300;400;500;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family==Ubuntu:wght@200;300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/fontawesome/css/all.css">
+    <script defer src="./assets/fontawesome/js/all.js"></script>
 </head>
 
 <body>
     <div id="container">
+        <div id="cookies" class="visible">
+            <div id="cookies-bar">
+                <div id="cookies-info">
+                    <h2>Sobre tu privacidad</h2>
+                    <p>Nosotros y terceros, como nuestros socios publicitarios y proveedores de servicios, utilizamos cookies y tecnologías similares para ofrecer nuestros servicios, ayudar a personalizar el contenido y realizar métricas de los anuncios. Al hacer clic en “aceptar cookies” o configurar tus preferencias en los “Ajustes de cookies”, estás aceptando su uso tal como se señala en nuestra política de cookies. <a href="#">Lee sobre nuestra política de cookies aquí</a></p>
+                </div><!--Fin cookies-info-->
+                <div class="separator"></div>
+                <div id="cookies-btn">
+                    <button class="btn btn-gray">Ajustes de cookies</button>
+                    <button id="acept-cookies" class="btn btn-blue-light">Aceptar cookies</button>
+                </div><!--Fin cookies-btn-->
+            </div>
+        </div><!--Fin de cookies-->
         <header id="header">
             <nav id="nav">
                 <h1 id="logo">trilinguo</h1>
-                <p id="select-lang">Idioma de la página: Español</p>
+                <div id="select-lang">
+                    <span id="lang-handler">
+                        <p>Idioma de la página: Español&nbsp;
+                            <i class="fas fa-chevron-down"></i>
+                        </p>
+                    </span>
+                    <div id="box-lang" class="oculto">
+                        <div class="square"></div>
+                        <ul id="ul-lang">
+                            <li class="li-lang"><img src="./assets/svg/es.svg" alt="Español" />Español</li>
+                            <li class="li-lang"><img src="./assets/svg/fr.svg" alt="Francés" />Français</li>
+                            <li class="li-lang"><img src="./assets/svg/br.svg" alt="Portugués" />Português</li>
+                            <li class="li-lang"><img src="./assets/svg/de.svg" alt="Alemán" />Deutsch</li>
+                            <li class="li-lang"><img src="./assets/svg/it.svg" alt="Italiano" />Italiano</li>
+                        </ul>
+                    </div>
+                </div>
             </nav>
             <section id="front">
                 <div id="globo">
@@ -35,6 +65,7 @@
         </header>
         <section id="lang-bar">
             <div id="lang-section">
+                <i class="fas fa-chevron-left"></i>
                 <div class="lang-item">
                     <img src="./assets/img/ingles.png" alt="Inglés" />
                     <span>Inglés</span>
@@ -55,12 +86,13 @@
                     <img src="./assets/img/italiano.png" alt="Italiano" />
                     <span>Italiano</span>
                 </div>
+                <i class="fas fa-chevron-right"></i>
             </div>
             <!--Fin lang-section-->
         </section>
         <!--Fin de lang-bar-->
-    </div>
-    <!--Fin de div-container-->
+    </div><!--Fin de div-container-->
+    
     <div id="block-info">
         <section class="info block-1">
             <img src="./assets/img/bhuo.png" alt="bhuo" class="bhuo">
@@ -118,8 +150,8 @@
                 <p>Haz que tus viajes y tiempo libre sean más productivos con la aplicación móvil de Duolingo.
                     Descárgala y descubre por qué Apple y Google nos otorgaron sus premios más altos.</p>
                 <div class="btn-app-block">
-                    <button class="btn-app">Descárgalo en la App store</button>
-                    <button class="btn-app">Disponible en Google Play</button>
+                    <button class="btn-app"><i class="fab fa-apple"></i><span>Descárgalo en la App store</span></button>
+                    <button class="btn-app"><i class="fab fa-google-play"></i><span>Disponible en Google Play</span></button>
                 </div>
             </div>
             <div class="separator"></div>
@@ -220,6 +252,8 @@
         </footer>
     </div>
     <!--Fin block-footer-->
+    <script src="./assets/js/tools.js"></script>
 </body>
 
 </html>
+ 

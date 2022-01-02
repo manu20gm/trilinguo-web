@@ -8,6 +8,74 @@ button{
     border: none;
 }
 
+/* Botones btn diseños */
+
+.btn{
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+    font-size: .7em;
+    font-weight: bold;
+    height: 15%;
+    min-width: 272px;
+    padding: 10px 30px 10px 30px;
+    text-transform: uppercase;
+    width: 50%;
+}
+
+.btn-green {
+    background-color: #58cc02;
+    box-shadow: 0px 5px #3f8b04;
+    margin-bottom: 20px;
+    
+}
+
+.btn-blue {
+    border: 2px solid rgb(9, 36, 70);
+    background-color: rgb(35,83,144);
+    box-shadow: 0px 5px  rgb(9, 36, 70);
+}
+
+.btn-gray {
+    border: 2px solid #e5e5e5;
+    background-color: #fff;
+    box-shadow: 0px 5px #e5e5e5;
+    color: #afafaf;
+    margin-bottom: 20px;
+    font-size: 1em;
+}
+
+.btn-blue-light{
+    border: 2px solid #1b99d6;
+    background-color: #1cb0f6;
+    box-shadow: 0px 5px  #1b99d6;
+    color: white;
+    font-size: 1em;
+}
+
+
+.btn-app{
+    background-color: white;
+    border-radius: 15px;
+    border: 2px solid #e5e5e5;
+    color: #444444;
+    font-weight: 700;
+    font-size:.9em;
+    text-align: left;
+    width: 190px;
+    cursor: pointer;
+    padding: 10px 30px 10px 30px;
+    box-shadow: 0px 5px #e5e5e5;
+}
+
+.btn-app:hover{
+    background-color: #e6e6e6;
+    box-shadow: 0px 5px #cfcfcf;
+    border: 2px solid #cfcfcf;
+}
+
+/* Seccion container 100vh header y barra lenguajes */
+
 #container{
     height: auto;
     width: auto;
@@ -52,6 +120,67 @@ button{
     justify-content: flex-end;
 }
 
+#select-lang > span > p, #select-lang > span > i{
+    cursor: pointer;
+} 
+
+#box-lang{
+    padding: 1em;
+    background-color: white;
+    border-radius: 25px;
+    display: flex;
+    position: absolute;
+    width: auto;
+    height: auto;
+    top: 15vh;
+}
+
+.square{
+    width: 20px;
+    height: 20px;
+    transform: rotate(45deg);
+    background-color: white;
+    position: absolute;
+    left: 45%;
+    top: -3%;
+}
+
+#ul-lang {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    list-style: none;
+    padding: 0 45px;
+}
+
+#ul-lang > li > img{
+    width: 25px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+#ul-lang > li:hover{
+    background-color:rgb(233, 233, 233);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.li-lang{
+    color: rgb(129, 129, 129);
+    font-size: 1em;
+    margin-bottom:15px;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px 10px 20px;
+}
+
+.fa-chevron-right, .fa-chevron-left{
+    cursor: pointer;
+}
+
 #front{
     display: flex;
     flex-direction: row;
@@ -79,31 +208,7 @@ button{
     font-size: 1.2em;
 }
 
-.btn{
-    border-radius: 20px;
-    color: white;
-    cursor: pointer;
-    font-size: .7em;
-    font-weight: bold;
-    height: 15%;
-    min-width: 272px;
-    padding: 10px 30px 10px 30px;
-    text-transform: uppercase;
-    width: 50%;
-}
-
-.btn-green {
-    background-color: #58cc02;
-    box-shadow: 0px 5px #3f8b04;
-    margin-bottom: 20px;
-    
-}
-
-.btn-blue {
-    border: 2px solid rgb(9, 36, 70);
-    background-color: rgb(35,83,144);
-    box-shadow: 0px 5px  rgb(9, 36, 70);
-}
+/* Seccion sobre barra lenguajes */
 
 #lang-bar{
     height: 10vh;
@@ -135,6 +240,59 @@ button{
     max-width: 35px;
     margin-right: 5px;
 }
+
+/* Seccion cookies */
+
+#cookies{
+    position: fixed;
+    height: 40vh;
+    top: 60vh;
+    background-color: white;
+    border-top: 4px solid #e5e5e5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+}
+
+#cookies-bar{
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#cookies-info{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 3;
+}
+
+#cookies-info > h2 {
+    font-size: 1em;
+    font-weight: bold;
+}
+
+#cookies-info > p {
+    font-size: 0.9em;
+    color: #777;
+    line-height: 1.8em;
+}
+
+#cookies-info > p > a {
+    color: #1cb0f6;
+    text-decoration: underline;
+}
+
+#cookies-btn{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+}
+
+/* Seccion de bloques info tras header */
 
 
 .info{
@@ -216,27 +374,6 @@ button{
 .link:hover{
     color: #2bd5ff;
 }
-
-.btn-app{
-    background-color: white;
-    border-radius: 15px;
-    border: 2px solid #e5e5e5;
-    color: #444444;
-    font-weight: 700;
-    font-size:.9em;
-    text-align: left;
-    width: 190px;
-    cursor: pointer;
-    padding: 10px 30px 10px 30px;
-    box-shadow: 0px 5px #e5e5e5;
-}
-
-.btn-app:hover{
-    background-color: #e6e6e6;
-    box-shadow: 0px 5px #cfcfcf;
-    border: 2px solid #cfcfcf;
-}
-
 
 #block-footer{
     height: auto;
@@ -321,6 +458,15 @@ button{
     #lang-bar {
        display: none;
     }
+    #cookies {
+        height: 90vh;
+        top: 10vh;
+        flex-direction: column;
+    }
+
+    #cookies-bar{
+        flex-direction: column;
+    }
 }
 
 @media only screen and (max-width: 710px) {
@@ -379,9 +525,9 @@ button{
     }
 
     .btn-app-block{
+        display: flex;
         flex-direction: row;
         justify-content: center;
-        display: flex;
         padding-bottom: 30px;
     }
 
@@ -420,4 +566,19 @@ button{
         min-width: 0px;
         width: 100%;
     }
+}
+
+
+/*Clases para JS*/
+
+#box-lang.oculto{
+    display: none;
+}
+
+#box-lang.visible{
+    display: flex;
+}
+
+#cookies.oculto{
+    display: none;
 }
